@@ -1,4 +1,4 @@
-import {Globe, Phone} from "lucide-react"
+import {Phone} from "lucide-react"
 import {Separator} from "@/components/ui/separator"
 
 const demographics = [
@@ -28,17 +28,6 @@ export default function Footer() {
                             Contact
                         </h4>
                         <ul className="mt-4 space-y-3 text-sm">
-                            <li>
-                                <a
-                                    href="https://www.thermoclean.uk"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="inline-flex items-center gap-2 text-slate-600 hover:text-brand-700"
-                                >
-                                    <Globe className="h-4 w-4"/>
-                                    www.thermoclean.uk
-                                </a>
-                            </li>
                             <li>
                                 <a
                                     href="tel:+447938422208"
