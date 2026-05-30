@@ -4,10 +4,22 @@ import {Card, CardContent} from "@/components/ui/card"
 import {Separator} from "@/components/ui/separator"
 
 const onlineRetailers = [
-    {name: "Status Home Care", url: "https://statushomecare.co.uk"},
-    {name: "Amazon", url: "https://www.amazon.co.uk/s?k=thermoclean"},
-    {name: "Price Panda", url: "https://pricepanda.co.uk"},
-    {name: "Stains and Bright", url: "https://stainsandbright.co.uk"},
+    {
+        name: "Status Home Care",
+        url: "https://statushomecare.com/products/thermoclean-vacuum-flask-cleaner-twin-sachet",
+    },
+    {
+        name: "Amazon",
+        url: "https://www.amazon.co.uk/Thermoclean-10x-10g-sachets/dp/B008UQKU7E",
+    },
+    {
+        name: "Price Panda",
+        url: "https://pricepanda.co.uk/products/thermoclean-the-ultimate-vacuum-flask-cleaner",
+    },
+    {
+        name: "Staines and Brights",
+        url: "https://www.stainesandbrights.co.uk/product/housewares/vacuum-flask-cleaner-twin-sachet/",
+    },
 ]
 
 const ukStockists = [
