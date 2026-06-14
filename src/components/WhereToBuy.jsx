@@ -2,6 +2,7 @@ import {ExternalLink, Mail, MapPin, ShoppingCart, Store} from "lucide-react"
 import {Button} from "@/components/ui/button"
 import {Card, CardContent} from "@/components/ui/card"
 import {Separator} from "@/components/ui/separator"
+import euipoLogo from "../../assets/img/euipo.png"
 
 const onlineRetailers = [
     {
@@ -188,26 +189,42 @@ export default function WhereToBuy() {
                 </Card>
 
                 <div className="mt-12 rounded-2xl border border-brand-200 bg-white p-6 sm:p-10">
-                    <div className="flex flex-col items-start gap-6 lg:flex-row lg:items-center lg:justify-between">
-                        <div className="max-w-2xl">
+                    <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:items-center">
+                        <div className="lg:col-span-2">
                             <p className="text-sm font-semibold uppercase tracking-wider text-brand-700">
-                                For Retailers
+                                For Retailers & Distributors
                             </p>
-                            <h3 className="mt-2 text-2xl font-bold tracking-tight text-slate-900">
-                                Selling premium flasks? Sell the cleaner that maintains them.
+                            <h3 className="mt-2 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+                                Expand your range with a trusted brand
                             </h3>
+                            <p className="mt-4 text-sm leading-relaxed text-slate-600 sm:text-base">
+                                Already trusted by canal holiday operators, country estates, and retailers since 1994. 
+                                Email us to order a <strong>Counter Display Unit (CDU)</strong> to showcase Thermoclean on your store shelves.
+                            </p>
                             <p className="mt-3 text-sm leading-relaxed text-slate-600 sm:text-base">
-                                Already trusted by canal holiday operators, country estates and
-                                hotels. Email us to order a Counter Display Unit (CDU) and be
-                                added to our stockist list.
+                                <strong>EU Distribution Opportunities:</strong> We are actively seeking distribution partners across Europe. 
+                                Thermoclean is fully registered with the <strong>European Union Intellectual Property Office (EUIPO Reg No. 001908052)</strong>, 
+                                reinforcing our long-term commitment to our European partners and consumers.
                             </p>
                         </div>
-                        <Button asChild size="lg" className="shrink-0">
-                            <a href="mailto:info@thermoclean.uk?subject=CDU%20Enquiry">
-                                <Mail className="h-4 w-4"/>
-                                Email for a CDU
-                            </a>
-                        </Button>
+                        <div className="flex flex-col items-center gap-6 rounded-xl bg-slate-50 p-6 border border-slate-100 lg:col-span-1">
+                            <img 
+                                src={euipoLogo} 
+                                alt="European Union Intellectual Property Office (EUIPO) Logo" 
+                                className="h-10 object-contain mix-blend-multiply opacity-95"
+                            />
+                            <div className="w-full text-center space-y-3">
+                                <Button asChild size="lg" className="w-full">
+                                    <a href="mailto:info@thermoclean.uk?subject=Distribution%20or%20CDU%20Enquiry">
+                                        <Mail className="h-4 w-4"/>
+                                        CDU & Distribution Enquiry
+                                    </a>
+                                </Button>
+                                <p className="text-[10px] text-slate-500">
+                                    EU Reg. No 001908052
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

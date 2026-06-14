@@ -1,5 +1,6 @@
 import {Phone} from "lucide-react"
 import {Separator} from "@/components/ui/separator"
+import euipoLogo from "../../assets/img/euipo.png"
 
 const demographics = [
     "Taxi & HGV drivers",
@@ -60,11 +61,18 @@ export default function Footer() {
                 <Separator className="my-10"/>
 
                 <div
-                    className="flex flex-col gap-4 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
-                    <p>
-                        © {new Date().getFullYear()} R&amp;R Chemicals Ltd. All rights
-                        reserved.
-                    </p>
+                    className="flex flex-col gap-6 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
+                    <div className="space-y-3">
+                        <p>
+                            © {new Date().getFullYear()} R&amp;R Chemicals Ltd. All rights
+                            reserved.
+                        </p>
+                        <img 
+                            src={euipoLogo} 
+                            alt="European Union Intellectual Property Office (EUIPO) Logo" 
+                            className="h-6 object-contain opacity-50 grayscale hover:opacity-100 transition-opacity"
+                        />
+                    </div>
                     <div className="space-y-1 sm:text-right">
                         <p>
                             Thermoclean is the registered Trade Mark of R&amp;R Chemicals Ltd.
