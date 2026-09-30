@@ -1,13 +1,6 @@
-import {
-  Coffee,
-  CupSoda,
-  Droplets,
-  Flower2,
-  Sandwich,
-  Utensils,
-  Wine,
-} from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
+import {Coffee, CupSoda, Droplets, Flower2, Sandwich, Utensils, Wine,} from "lucide-react";
+import {Card, CardContent} from "@/components/ui/card";
+import MugDemonstration from "@/components/MugDemonstration";
 
 import beforeCup from "../../assets/img/before-1.jpg";
 import beforeStrainer from "../../assets/img/before-2.jpg";
@@ -161,6 +154,8 @@ export default function Usage() {
             ))}
           </div>
         </div>
+
+        <MugDemonstration/>
 
         <div className="mt-24 border-t border-slate-200 pt-20">
           <div className="mx-auto max-w-2xl text-center">
