@@ -56,7 +56,7 @@ const resultPhotos = [
     },
 ];
 
-function DemonstrationCard({item}) {
+export function DemonstrationCard({item}) {
     return (
         <figure className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xs">
             <div className="aspect-square border-b border-slate-200 bg-slate-100">

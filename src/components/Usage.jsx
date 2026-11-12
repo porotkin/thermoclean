@@ -1,13 +1,48 @@
 import {Coffee, CupSoda, Droplets, Flower2, Sandwich, Utensils, Wine,} from "lucide-react";
 import {Card, CardContent} from "@/components/ui/card";
-import MugDemonstration from "@/components/MugDemonstration";
+import MugDemonstration, {DemonstrationCard} from "@/components/MugDemonstration";
 
+import flaskBefore from "../../assets/img/flask-before.jpg";
+import flaskAfter from "../../assets/img/flask-after.jpg";
+import flaskExterior from "../../assets/img/flask-exterior.jpg";
 import beforeCup from "../../assets/img/before-1.jpg";
 import beforeStrainer from "../../assets/img/before-2.jpg";
 import soakCup from "../../assets/img/usage-1.jpg";
 import soakStrainer from "../../assets/img/usage-2.jpg";
 import afterCup from "../../assets/img/after-1.jpg";
 import afterStrainer from "../../assets/img/after-2.jpg";
+
+const flaskPhotos = [
+  {
+    id: "flask-before",
+    src: flaskBefore,
+    alt: "Looking down into a vacuum flask with a brown-stained interior before cleaning",
+    width: 1944,
+    height: 2592,
+    title: "Before cleaning",
+    caption: "Inside the flask: brown staining coats the walls and base.",
+  },
+  {
+    id: "flask-after",
+    src: flaskAfter,
+    alt: "Looking down into the same vacuum flask with a clean, bright interior after cleaning",
+    width: 1944,
+    height: 2592,
+    title: "After cleaning",
+    caption:
+        "The same flask after cleaning with Thermoclean. The interior is bright again, right down to the base.",
+  },
+  {
+    id: "flask-exterior",
+    src: flaskExterior,
+    alt: "White vacuum flask standing on a kitchen worktop",
+    width: 1944,
+    height: 2592,
+    title: "The flask",
+    caption:
+        "The flask used in this demonstration. Its narrow neck makes the inside hard to reach with a brush.",
+  },
+];
 
 const visualSteps = [
   {
@@ -156,6 +191,34 @@ export default function Usage() {
         </div>
 
         <MugDemonstration/>
+
+        <section
+            id="flask-demonstration"
+            aria-labelledby="flask-demonstration-heading"
+            className="mt-24 border-t border-slate-200 pt-20"
+        >
+          <div className="mx-auto max-w-2xl text-center">
+            <p className="text-sm font-semibold uppercase tracking-wider text-brand-700">
+              Before & After
+            </p>
+            <h3
+                id="flask-demonstration-heading"
+                className="mt-3 text-2xl font-bold tracking-tight text-slate-900 sm:text-4xl"
+            >
+              A stained flask, clean inside again
+            </h3>
+            <p className="mt-4 text-base text-slate-600 sm:text-lg">
+              Flasks are where staining is hardest to reach. Thermoclean cleans
+              the inside without scrubbing.
+            </p>
+          </div>
+
+          <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
+            {flaskPhotos.map((photo) => (
+                <DemonstrationCard key={photo.id} item={photo}/>
+            ))}
+          </div>
+        </section>
 
         <div className="mt-24 border-t border-slate-200 pt-20">
           <div className="mx-auto max-w-2xl text-center">
